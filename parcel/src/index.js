@@ -1,5 +1,6 @@
 import AppOne from "./components/AppOne.svelte";
 import AppTwo from "./components/AppTwo.svelte";
+import clickHandler from "./handlers/clickHandler";
 
 new AppTwo({
   target: document.querySelector("#app2"),
@@ -14,3 +15,5 @@ new AppOne({
     name: "Svelte App 1",
   },
 });
+
+document.addEventListener("click", clickHandler);
