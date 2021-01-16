@@ -1,0 +1,19 @@
+{
+  "name": "svelte-playground-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development parcel src/index.html",
+    "build": "NODE_ENV=production parcel build src/index.html",
+    "clean": "rm -rf dist && rm -rf .cache"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-svelte": "^4.0.6",
+    "svelte": "^3.31.2"
+  }
+}
